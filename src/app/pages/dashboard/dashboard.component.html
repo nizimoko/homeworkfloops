@@ -1,0 +1,11 @@
+<div>
+  <label>Search For A Name:</label>
+  <input type="text" name="names" [(ngModel)]="userValue" />
+</div>
+
+<a
+  class="btn btn-warning"
+  routerLink="/names-list"
+  [queryParams]="{ name: userValue }"
+  >Search</a
+>
